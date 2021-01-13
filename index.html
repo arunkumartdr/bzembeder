@@ -1,34 +1,21 @@
 <html>
-<h1>SAMPLE PDF EMBED</h1>
-  <br>
-  <hr>
-  <div id="adobe-dc-view" style="height: 100%; width: 100%;"></div>
+<div id="adobe-dc-view" style="height: 100%; width: 100%;"></div>
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 <script type="text/javascript">
-  
  const previewConfig = {
    showDownloadPDF: false,
    showPageControls: false,
    enableFormFilling: false,
    showAnnotationTools: false
 } 
- 
-
- 
-  document.addEventListener("adobe_dc_view_sdk.ready", function(){
+document.addEventListener("adobe_dc_view_sdk.ready", function(){
     var adobeDCView = new AdobeDC.View({clientId: "c7c48ce4e5d94e64a4c79a7d0a10c4c5", divId: "adobe-dc-view"});
     adobeDCView.previewFile({
       content:{ location: 
-        { url: "TAMIL_SAMPLE_QUESTION_2011_I.pdf"}},
+        { url: "https://raw.githubusercontent.com/arunkumartdr/bzembeder/main/TAMIL_SAMPLE_QUESTION_2011_I.pdf"}},
       metaData:{fileName: "TAMIL_SAMPLE_QUESTION_2011_I.pdf"}
     },
-     previewConfig,
-    {
-      embedMode: "IN_LINE"
-    });
-  });
+    {embedMode: "IN_LINE"});
+ });
 </script>
-
-  <br>
-  <hr>
 </html>
