@@ -3,37 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-* {box-sizing: border-box;}
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.pdf {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.overlay {
-  position: absolute; 
-  top: 0; 
-  background: white;
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
+[class~=container]{position:relative;}[class~=container],.pdf,[class~=overlay]{width:100%;}[class~=container],.pdf{height:100%;}.pdf{display:block;}*{box-sizing:border-box;}[class~=overlay]{position:absolute;}[class~=overlay]{top:0;}[class~=overlay]{background:white;}[class~=overlay]{color:#f1f1f1;}[class~=overlay]{color:white;}[class~=overlay]{transition:.5s ease;}[class~=overlay]{opacity:0;}[class~=overlay]{font-size:.208333333in;}[class~=overlay]{padding-left:15pt;}[class~=overlay]{padding-bottom:15pt;}[class~=overlay]{padding-right:15pt;}[class~=overlay]{padding-top:15pt;}[class~=overlay]{text-align:center;}[class~=container]:hover [class~=overlay]{opacity:1;}
 </style>
 </head>
 <body bgcolor="black">
