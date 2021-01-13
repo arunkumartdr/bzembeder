@@ -12,13 +12,7 @@
    enableFormFilling: false
 } 
  
-const setConfig = {
-   showToolbar: false,
-   showCommentsPanel: false,
-   downloadWithAnnotations: false,
-   showToolsOnTextSelection: false,
-   printWithAnnotations: false
-} 
+
  
   document.addEventListener("adobe_dc_view_sdk.ready", function(){
     var adobeDCView = new AdobeDC.View({clientId: "c7c48ce4e5d94e64a4c79a7d0a10c4c5", divId: "adobe-dc-view"});
@@ -28,7 +22,8 @@ const setConfig = {
       metaData:{fileName: "Bodea Brochure.pdf"}
     },
      previewConfig,
-     setConfig,                            
+     setConfig,
+    {showAnnotationTools: false},
     {
       embedMode: "FULL_WINDOW"
     });
